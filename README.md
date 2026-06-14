@@ -4,13 +4,13 @@
 <!--                        HEADER BANNER                              -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f2937&height=220&section=header&text=Dharshan&fontSize=56&fontColor=e2e8f0&animation=fadeIn&fontAlignY=34&desc=Systems%20Engineer%20%C2%B7%20Open%20Source%20Enthusiast%20%C2%B7%20Low-Level%20Tinkerer&descAlignY=56&descSize=16&descColor=94a3b8" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,20:1a1b2e,50:312e81,80:4c1d95,100:6d28d9&height=230&section=header&text=Dharshan&fontSize=58&fontColor=e2e8f0&animation=twinkling&fontAlignY=32&desc=Systems%20Engineer%20%C2%B7%20Open%20Source%20Enthusiast%20%C2%B7%20Low-Level%20Tinkerer&descAlignY=55&descSize=16&descColor=c4b5fd" width="100%" />
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 <!--                       TYPING ANIMATION                            -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&duration=3000&pause=1000&color=F97316&center=true&vCenter=true&multiline=false&width=700&height=35&lines=Building+systems+that+don't+just+work+%E2%80%94+they+fly+%F0%9F%9A%80;Rust+%7C+C%2B%2B+%7C+Systems+Programming+%7C+Cloud+Native;Currently+exploring+Compiler+Design+%26+WebAssembly;Open+to+collaborating+on+open-source+projects)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&duration=3000&pause=1000&color=F97316&center=true&vCenter=true&multiline=false&width=720&height=35&lines=Building+systems+that+compile+trust+into+every+binary+%F0%9F%9B%A1%EF%B8%8F;Rust+%C2%B7+C%2B%2B+%C2%B7+Systems+Programming+%C2%B7+Cloud+Native;Currently+obsessing+over+compiler+internals+%26+WebAssembly;Let's+build+something+that+survives+production+%F0%9F%9A%80)](https://git.io/typing-svg)
 
 <br/>
 
@@ -30,9 +30,14 @@
 <!--                          ABOUT ME                                 -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
-<br/>
+<img src="./assets/gradient-line.svg" width="100%" />
 
 <div align="center">
+
+### 👋 About Me
+
+> *Systems programmer who believes in writing software that's fast by design, not by accident.*
+
 <table>
 <tr>
 <td>
@@ -69,15 +74,15 @@ impl Developer {
 </table>
 </div>
 
-<br/>
-
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 <!--                         TECH STACK                                -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
+<img src="./assets/gradient-line.svg" width="100%" />
+
 <div align="center">
 
-## 🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 <br/>
 
@@ -95,25 +100,23 @@ impl Developer {
 
 **`Currently Exploring`**
 
-<img src="https://skillicons.dev/icons?i=wasm&theme=dark" alt="Exploring" />
-&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/Compiler%20Design-F97316?style=for-the-badge&logo=llvm&logoColor=white" alt="Compiler Design" />
-&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/Systems%20Programming-6366F1?style=for-the-badge&logo=linux&logoColor=white" alt="Systems Programming" />
-&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/Networking-0EA5E9?style=for-the-badge&logo=cisco&logoColor=white" alt="Networking" />
-
-</div>
+<img src="https://skillicons.dev/icons?i=wasm&theme=dark" alt="WebAssembly" />
 
 <br/>
+
+`Compiler Design` · `Systems Programming` · `Networking` · `WebAssembly`
+
+</div>
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 <!--                        GITHUB STATS                               -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
+<img src="./assets/gradient-line.svg" width="100%" />
+
 <div align="center">
 
-## 📊 GitHub Analytics
+### 📊 GitHub Analytics
 
 <br/>
 
@@ -133,29 +136,47 @@ impl Developer {
 
 </div>
 
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!--                         TROPHIES                                  -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+
+<img src="./assets/gradient-line.svg" width="100%" />
+
+<div align="center">
+
+### 🏆 Achievements
+
 <br/>
+
+[![trophy](https://github-trophies.vercel.app/?username=dharshan-X&theme=tokyonight&no-bg=true&no-frame=true&column=7&margin-w=10&margin-h=10)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 <!--                      FEATURED PROJECTS                            -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
+<img src="./assets/gradient-line.svg" width="100%" />
+
 <div align="center">
 
-## 🔭 What I'm Building
+### 🔭 What I'm Building
 
 > *Check out my pinned repositories below — that's where the interesting stuff lives.*
 
 </div>
 
-<br/>
-
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 <!--                         CONNECT                                   -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
+<img src="./assets/gradient-line.svg" width="100%" />
+
 <div align="center">
 
-## 🤝 Let's Connect
+### 🤝 Let's Connect
+
+*I'm always open to interesting conversations and collaboration opportunities.*
 
 <br/>
 
@@ -169,17 +190,17 @@ impl Developer {
 
 </div>
 
-<br/>
-
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 <!--                          FOOTER                                   -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
+
+<img src="./assets/gradient-line.svg" width="100%" />
 
 <div align="center">
 
 <br/>
 
-> *"The best code is no code at all. The second best is code that's elegant enough to look like it wrote itself."*
+> *"Any sufficiently advanced systems programmer is indistinguishable from a compiler."*
 
 <br/>
 
@@ -191,6 +212,6 @@ impl Developer {
 
 <br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f2937&height=120&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6d28d9,20:4c1d95,50:312e81,80:1a1b2e,100:0d1117&height=120&section=footer" width="100%" />
 
 </div>
