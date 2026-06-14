@@ -129,7 +129,7 @@ impl Developer {
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=dharshan-X&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=c9d1d9&line=F97316&point=6366f1&area=true&area_color=F97316" width="95%" alt="Contribution Graph"/>
+<img src="/github-metrics.svg" alt="Isometric Commit Calendar" width="95%" />
 
 </div>
 
