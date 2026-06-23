@@ -44,14 +44,10 @@ const DHARSHAN: Developer = Developer {
 
 <br/>
 
-## 02. CORE STACK
+## 02. CORE SYSTEM ARCHITECTURE
 
-| Domain | Technologies |
-| :--- | :--- |
-| **Languages** | `Rust` / `C++` / `C` / `Python` / `Go` / `Assembly` |
-| **Systems** | `Linux` / `WebAssembly` / `POSIX` / `Compilers` |
-| **Infrastructure** | `Docker` / `Kubernetes` / `GitLab CI` / `GitHub Actions` / `AWS` |
-| **Tooling** | `Neovim` / `Git` / `Cargo` / `CMake` / `GDB` |
+<!-- Interactive Bento Grid representing domains and technologies -->
+<img src="./assets/bento.svg" width="100%" alt="Developer domains and bento visualization" />
 
 <br/>
 
