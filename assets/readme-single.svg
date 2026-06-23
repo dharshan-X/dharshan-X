@@ -27,7 +27,7 @@
     .grid-line { stroke: var(--border); stroke-width: 0.5; }
     .grid-line-major { stroke: var(--border); stroke-width: 1; }
     
-    /* Terminal & Cards */
+    /* Terminal and Cards */
     .card-bg { fill: var(--code-bg); stroke: var(--border); stroke-width: 1; }
     
     /* Typography */
@@ -174,7 +174,7 @@
     <path class="schematic active" d="M 230,120 L 250,120 L 250,120 L 270,120" />
     <polygon points="270,117 276,120 270,123" fill="var(--accent)" />
 
-    <!-- Column 2: VMs & Runtimes -->
+    <!-- Column 2: VMs and Runtimes -->
     <g transform="translate(250, 30)">
       <rect class="card-bg" x="0" y="0" width="230" height="180" rx="4" />
       <path d="M 0,0 L 230,0" stroke="var(--accent)" stroke-width="2" />
