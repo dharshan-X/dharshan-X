@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="100%" height="auto">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --border: #e4e4e7;
+      --text-primary: #09090b;
+      --text-secondary: #71717a;
+      --text-muted: #a1a1aa;
+      --grid: rgba(228, 228, 231, 0.4);
+      --accent: #DE5E14;
+      --accent-glow: rgba(222, 94, 20, 0.1);
+      --font-mono: 'JetBrains Mono', 'Geist Mono', monospace;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #09090b;
+        --border: #27272a;
+        --text-primary: #f4f4f5;
+        --text-secondary: #a1a1aa;
+        --text-muted: #52525b;
+        --grid: rgba(39, 39, 42, 0.3);
+      }
+    }
+    .bg { fill: var(--bg); stroke: var(--border); stroke-width: 1; transition: fill 0.3s; }
+    .grid { stroke: var(--grid); stroke-width: 1; stroke-dasharray: 4 12; }
+    
+    /* Typography */
+    .title { font-family: var(--font-mono); font-size: 32px; font-weight: 800; fill: var(--text-primary); letter-spacing: -0.05em; }
+    .subtitle { font-family: var(--font-mono); font-size: 14px; font-weight: 500; fill: var(--text-secondary); letter-spacing: -0.02em; }
+    .badge-text { font-family: var(--font-mono); font-size: 11px; font-weight: 700; fill: var(--accent); }
+    
+    /* Pipeline Graphic */
+    .pipe-box { fill: var(--bg); stroke: var(--border); stroke-width: 1.5; rx: 4; }
+    .pipe-box.active { stroke: var(--accent); stroke-width: 2; filter: drop-shadow(0 2px 8px var(--accent-glow)); }
+    .pipe-box.final { fill: var(--text-primary); stroke: var(--text-primary); }
+    .pipe-text { font-family: var(--font-mono); font-size: 10px; font-weight: 600; fill: var(--text-secondary); text-anchor: middle; }
+    .pipe-text.active { fill: var(--accent); }
+    .pipe-text.final { fill: var(--bg); }
+    .pipe-arrow { stroke: var(--text-muted); stroke-width: 1.5; fill: none; stroke-dasharray: 4 4; }
+    .pipe-arrow.active { stroke: var(--accent); stroke-dasharray: none; }
+    
+    .node-dot { fill: var(--border); }
+    .node-dot.active { fill: var(--accent); }
+  </style>
+
+  <!-- Background Panel -->
+  <rect class="bg" width="850" height="240" rx="8" />
+
+  <!-- Grid Pattern -->
+  <g>
+    <line class="grid" x1="40" y1="0" x2="40" y2="240" />
+    <line class="grid" x1="120" y1="0" x2="120" y2="240" />
+    <line class="grid" x1="200" y1="0" x2="200" y2="240" />
+    <line class="grid" x1="280" y1="0" x2="280" y2="240" />
+    <line class="grid" x1="360" y1="0" x2="360" y2="240" />
+    <line class="grid" x1="440" y1="0" x2="440" y2="240" />
+    <line class="grid" x1="520" y1="0" x2="520" y2="240" />
+    <line class="grid" x1="600" y1="0" x2="600" y2="240" />
+    <line class="grid" x1="680" y1="0" x2="680" y2="240" />
+    <line class="grid" x1="760" y1="0" x2="760" y2="240" />
+    <line class="grid" x1="840" y1="0" x2="840" y2="240" />
+    
+    <line class="grid" x1="0" y1="40" x2="850" y2="40" />
+    <line class="grid" x1="0" y1="120" x2="850" y2="120" />
+    <line class="grid" x1="0" y1="200" x2="850" y2="200" />
+  </g>
+
+  <!-- Header Info -->
+  <g transform="translate(60, 95)">
+    <text class="title" x="0" y="0">dharshan-X</text>
+    <text class="subtitle" x="0" y="30">systems &amp; backend engineer</text>
+    <rect x="0" y="48" width="168" height="22" rx="4" fill="var(--accent-glow)" stroke="var(--accent)" stroke-width="0.5" />
+    <text class="badge-text" x="8" y="63">rust // compiler internals</text>
+  </g>
+
+  <!-- Compiler Pipeline Graphic -->
+  <g transform="translate(480, 50)">
+    <!-- Nodes Background Grid Lines -->
+    <path class="pipe-arrow" d="M 40,40 L 120,40" />
+    <path class="pipe-arrow active" d="M 120,40 L 120,110 L 200,110" />
+    <path class="pipe-arrow" d="M 40,110 L 120,110" />
+    <path class="pipe-arrow" d="M 200,110 L 280,110" />
+    
+    <!-- Stage: Source -->
+    <g transform="translate(0, 20)">
+      <rect class="pipe-box" width="80" height="40" />
+      <text class="pipe-text" x="40" y="24">.rs source</text>
+    </g>
+    
+    <!-- Stage: Lex/Parse -->
+    <g transform="translate(0, 90)">
+      <rect class="pipe-box" width="80" height="40" />
+      <text class="pipe-text" x="40" y="24">ast / parser</text>
+    </g>
+    
+    <!-- Stage: IR / Middle End -->
+    <g transform="translate(160, 90)">
+      <rect class="pipe-box active" width="80" height="40" />
+      <text class="pipe-text active" x="40" y="24">mir / optimization</text>
+    </g>
+
+    <!-- Stage: Backend / Binary -->
+    <g transform="translate(240, 20)">
+      <rect class="pipe-box final" width="80" height="40" />
+      <text class="pipe-text final" x="40" y="24">wasm / elf</text>
+    </g>
+    
+    <path class="pipe-arrow active" d="M 200,110 L 280,110 L 280,60" />
+
+    <!-- Details/Connecting dots -->
+    <circle class="node-dot" cx="120" cy="40" r="3" />
+    <circle class="node-dot active" cx="120" cy="110" r="3.5" />
+    <circle class="node-dot active" cx="200" cy="110" r="3.5" />
+    <circle class="node-dot" cx="280" cy="110" r="3" />
+  </g>
+
+</svg>
