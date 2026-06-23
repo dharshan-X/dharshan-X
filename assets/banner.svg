@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="100%" height="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="100%" height="auto">
   <style>
     :root {
       --bg: #ffffff;
@@ -6,9 +6,8 @@
       --text-primary: #09090b;
       --text-secondary: #71717a;
       --text-muted: #a1a1aa;
-      --grid: rgba(228, 228, 231, 0.4);
       --accent: #DE5E14;
-      --accent-glow: rgba(222, 94, 20, 0.1);
+      --accent-alpha: rgba(222, 94, 20, 0.05);
       --font-mono: 'JetBrains Mono', 'Geist Mono', monospace;
     }
     @media (prefers-color-scheme: dark) {
@@ -18,100 +17,87 @@
         --text-primary: #f4f4f5;
         --text-secondary: #a1a1aa;
         --text-muted: #52525b;
-        --grid: rgba(39, 39, 42, 0.3);
+        --accent-alpha: rgba(222, 94, 20, 0.15);
       }
     }
-    .bg { fill: var(--bg); stroke: var(--border); stroke-width: 1; transition: fill 0.3s; }
-    .grid { stroke: var(--grid); stroke-width: 1; stroke-dasharray: 4 12; }
+    
+    .bg { fill: var(--bg); stroke: var(--border); stroke-width: 1.5; transition: fill 0.3s; }
+    .grid-line { stroke: var(--border); stroke-width: 0.5; }
+    .grid-line-major { stroke: var(--border); stroke-width: 1; }
     
     /* Typography */
-    .title { font-family: var(--font-mono); font-size: 32px; font-weight: 800; fill: var(--text-primary); letter-spacing: -0.05em; }
-    .subtitle { font-family: var(--font-mono); font-size: 14px; font-weight: 500; fill: var(--text-secondary); letter-spacing: -0.02em; }
-    .badge-text { font-family: var(--font-mono); font-size: 11px; font-weight: 700; fill: var(--accent); }
+    .title { font-family: var(--font-mono); font-size: 26px; font-weight: 800; fill: var(--text-primary); letter-spacing: -0.05em; }
+    .subtitle { font-family: var(--font-mono); font-size: 11px; font-weight: 700; fill: var(--accent); letter-spacing: 0.1em; }
+    .mono-meta { font-family: var(--font-mono); font-size: 9px; fill: var(--text-secondary); }
+    .mono-label { font-family: var(--font-mono); font-size: 9px; fill: var(--text-muted); font-weight: bold; }
     
-    /* Pipeline Graphic */
-    .pipe-box { fill: var(--bg); stroke: var(--border); stroke-width: 1.5; rx: 4; }
-    .pipe-box.active { stroke: var(--accent); stroke-width: 2; filter: drop-shadow(0 2px 8px var(--accent-glow)); }
-    .pipe-box.final { fill: var(--text-primary); stroke: var(--text-primary); }
-    .pipe-text { font-family: var(--font-mono); font-size: 10px; font-weight: 600; fill: var(--text-secondary); text-anchor: middle; }
-    .pipe-text.active { fill: var(--accent); }
-    .pipe-text.final { fill: var(--bg); }
-    .pipe-arrow { stroke: var(--text-muted); stroke-width: 1.5; fill: none; stroke-dasharray: 4 4; }
-    .pipe-arrow.active { stroke: var(--accent); stroke-dasharray: none; }
+    /* Schematic Lines */
+    .schematic { stroke: var(--text-muted); stroke-width: 1; fill: none; }
+    .schematic.active { stroke: var(--accent); stroke-width: 1.5; }
+    .schematic-node { fill: var(--bg); stroke: var(--text-muted); stroke-width: 1; }
+    .schematic-node.active { fill: var(--accent); stroke: var(--accent); }
     
-    .node-dot { fill: var(--border); }
-    .node-dot.active { fill: var(--accent); }
+    @keyframes pulse {
+      0% { opacity: 0.2; }
+      50% { opacity: 1; }
+      100% { opacity: 0.2; }
+    }
+    .pulsing { animation: pulse 3s infinite ease-in-out; }
   </style>
 
-  <!-- Background Panel -->
-  <rect class="bg" width="850" height="240" rx="8" />
+  <!-- Main panel -->
+  <rect class="bg" width="850" height="180" rx="4" />
 
-  <!-- Grid Pattern -->
-  <g>
-    <line class="grid" x1="40" y1="0" x2="40" y2="240" />
-    <line class="grid" x1="120" y1="0" x2="120" y2="240" />
-    <line class="grid" x1="200" y1="0" x2="200" y2="240" />
-    <line class="grid" x1="280" y1="0" x2="280" y2="240" />
-    <line class="grid" x1="360" y1="0" x2="360" y2="240" />
-    <line class="grid" x1="440" y1="0" x2="440" y2="240" />
-    <line class="grid" x1="520" y1="0" x2="520" y2="240" />
-    <line class="grid" x1="600" y1="0" x2="600" y2="240" />
-    <line class="grid" x1="680" y1="0" x2="680" y2="240" />
-    <line class="grid" x1="760" y1="0" x2="760" y2="240" />
-    <line class="grid" x1="840" y1="0" x2="840" y2="240" />
-    
-    <line class="grid" x1="0" y1="40" x2="850" y2="40" />
-    <line class="grid" x1="0" y1="120" x2="850" y2="120" />
-    <line class="grid" x1="0" y1="200" x2="850" y2="200" />
+  <!-- Drawing Board Coordinates -->
+  <line class="grid-line-major" x1="30" y1="0" x2="30" y2="180" />
+  <line class="grid-line-major" x1="0" y1="30" x2="850" y2="30" />
+  <line class="grid-line-major" x1="0" y1="150" x2="850" y2="150" />
+  <line class="grid-line-major" x1="580" y1="0" x2="580" y2="180" />
+
+  <!-- Border markings -->
+  <text class="mono-label" x="10" y="20">A1</text>
+  <text class="mono-label" x="10" y="80">A2</text>
+  <text class="mono-label" x="10" y="140">A3</text>
+  <text class="mono-label" x="10" y="170">A4</text>
+  <text class="mono-label" x="50" y="20">01 / GENERAL SPECIFICATION</text>
+  <text class="mono-label" x="595" y="20">02 / INTERNALS SCHEMATIC</text>
+
+  <!-- Identity Info -->
+  <g transform="translate(50, 60)">
+    <text class="title" x="0" y="20">dharshan-X</text>
+    <text class="subtitle" x="0" y="45">SYSTEMS &amp; BACKEND ENGINEERING</text>
   </g>
 
-  <!-- Header Info -->
-  <g transform="translate(60, 95)">
-    <text class="title" x="0" y="0">dharshan-X</text>
-    <text class="subtitle" x="0" y="30">systems &amp; backend engineer</text>
-    <rect x="0" y="48" width="168" height="22" rx="4" fill="var(--accent-glow)" stroke="var(--accent)" stroke-width="0.5" />
-    <text class="badge-text" x="8" y="63">rust // compiler internals</text>
+  <!-- Revision info inside block -->
+  <g transform="translate(50, 162)">
+    <text class="mono-meta" x="0" y="0">REVISION: <tspan fill="var(--text-primary)">6.8.0-RUST</tspan></text>
+    <text class="mono-meta" x="180" y="0">TARGET: <tspan fill="var(--text-primary)">WASM32-WASI / x86_64</tspan></text>
+    <text class="mono-meta" x="380" y="0">LOC: <tspan fill="var(--text-primary)">SALEM, TN, IN</tspan></text>
   </g>
 
-  <!-- Compiler Pipeline Graphic -->
-  <g transform="translate(480, 50)">
-    <!-- Nodes Background Grid Lines -->
-    <path class="pipe-arrow" d="M 40,40 L 120,40" />
-    <path class="pipe-arrow active" d="M 120,40 L 120,110 L 200,110" />
-    <path class="pipe-arrow" d="M 40,110 L 120,110" />
-    <path class="pipe-arrow" d="M 200,110 L 280,110" />
-    
-    <!-- Stage: Source -->
-    <g transform="translate(0, 20)">
-      <rect class="pipe-box" width="80" height="40" />
-      <text class="pipe-text" x="40" y="24">.rs source</text>
-    </g>
-    
-    <!-- Stage: Lex/Parse -->
-    <g transform="translate(0, 90)">
-      <rect class="pipe-box" width="80" height="40" />
-      <text class="pipe-text" x="40" y="24">ast / parser</text>
-    </g>
-    
-    <!-- Stage: IR / Middle End -->
-    <g transform="translate(160, 90)">
-      <rect class="pipe-box active" width="80" height="40" />
-      <text class="pipe-text active" x="40" y="24">mir / optimization</text>
-    </g>
+  <!-- Technical drawing in block 02 (Right side) -->
+  <g transform="translate(600, 45)">
+    <!-- Grid inside drawing -->
+    <line class="grid-line" x1="0" y1="20" x2="220" y2="20" />
+    <line class="grid-line" x1="0" y1="50" x2="220" y2="50" />
+    <line class="grid-line" x1="0" y1="80" x2="220" y2="80" />
+    <line class="grid-line" x1="60" y1="0" x2="60" y2="90" />
+    <line class="grid-line" x1="140" y1="0" x2="140" y2="90" />
 
-    <!-- Stage: Backend / Binary -->
-    <g transform="translate(240, 20)">
-      <rect class="pipe-box final" width="80" height="40" />
-      <text class="pipe-text final" x="40" y="24">wasm / elf</text>
-    </g>
-    
-    <path class="pipe-arrow active" d="M 200,110 L 280,110 L 280,60" />
+    <!-- Schematic lines representing node flow -->
+    <path class="schematic" d="M 10,20 L 60,50 L 140,20 L 210,50" />
+    <path class="schematic active" d="M 10,80 L 60,50 L 140,80 L 210,50" />
 
-    <!-- Details/Connecting dots -->
-    <circle class="node-dot" cx="120" cy="40" r="3" />
-    <circle class="node-dot active" cx="120" cy="110" r="3.5" />
-    <circle class="node-dot active" cx="200" cy="110" r="3.5" />
-    <circle class="node-dot" cx="280" cy="110" r="3" />
+    <!-- Nodes -->
+    <circle class="schematic-node" cx="10" cy="20" r="3.5" />
+    <circle class="schematic-node" cx="10" cy="80" r="3.5" />
+    <circle class="schematic-node active pulsing" cx="60" cy="50" r="4.5" />
+    <circle class="schematic-node" cx="140" cy="20" r="3.5" />
+    <circle class="schematic-node" cx="140" cy="80" r="3.5" />
+    <circle class="schematic-node active" cx="210" cy="50" r="4.5" />
+
+    <!-- Tech specs text -->
+    <text class="mono-meta" x="0" y="100">AST_OPTIMIZER [MIR] -- ACTIVE</text>
   </g>
 
 </svg>
