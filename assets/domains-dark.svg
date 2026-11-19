@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 212" width="900" height="212" fill="none">
+  <style>.sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; } .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }</style>
+  <g transform="translate(0, 2)">
+    <rect x="0.75" y="0.75" width="211.5" height="206.5" rx="9" fill="#111114" stroke="#27272a" stroke-width="1.5"/>
+    <path d="M 10,1 L 203,1" stroke="#DE5E14" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Header Row -->
+    <g transform="translate(14, 16)">
+      <rect x="0" y="0" width="32" height="32" rx="7" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+      <circle cx="16" cy="16" r="4.5" stroke="#DE5E14" stroke-width="1.6"/><circle cx="8" cy="9" r="2" fill="#DE5E14"/><circle cx="24" cy="9" r="2" fill="#DE5E14"/><circle cx="16" cy="25" r="2" fill="#DE5E14"/><path d="M9.5 10.5L13 13.5M22.5 10.5L19 13.5M16 20.5V23" stroke="#DE5E14" stroke-width="1.3"/>
+      <text x="41" y="12.5" class="mono" font-size="9.5" font-weight="700" letter-spacing="0.9" fill="#DE5E14">01 // AGENTIC AI</text>
+      <text x="41" y="28" class="sans" font-size="12" font-weight="700" fill="#f4f4f5">Agents &amp; GraphRAG</text>
+    </g>
+
+    <line x1="14" y1="62" x2="199" y2="62" stroke="#27272a" stroke-width="1"/>
+
+    <!-- Bullet Lines -->
+    <g transform="translate(14, 86)" class="sans" font-size="11.5" fill="#a1a1aa">
+      <circle cx="3" cy="-3.5" r="2" fill="#DE5E14"/>
+      <text x="12" y="0">Multi-LLM routing &amp; ReAct</text>
+
+      <circle cx="3" cy="23.5" r="2" fill="#DE5E14"/>
+      <text x="12" y="27">Neo4j GraphRAG + mem0</text>
+
+      <circle cx="3" cy="50.5" r="2" fill="#DE5E14"/>
+      <text x="12" y="54">SoM GUI vision &amp; stealth</text>
+    </g>
+
+    <!-- Footer Pill -->
+    <rect x="14" y="165" width="185" height="26" rx="5" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+    <text x="106.5" y="182" class="mono" font-size="10" font-weight="600" fill="#71717a" text-anchor="middle">ProjectYolo · ActiveRAG</text>
+  </g>
+  <g transform="translate(229, 2)">
+    <rect x="0.75" y="0.75" width="211.5" height="206.5" rx="9" fill="#111114" stroke="#27272a" stroke-width="1.5"/>
+    <path d="M 10,1 L 203,1" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Header Row -->
+    <g transform="translate(14, 16)">
+      <rect x="0" y="0" width="32" height="32" rx="7" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+      <rect x="6" y="8" width="20" height="16" rx="3" stroke="#F59E0B" stroke-width="1.5"/><path d="M10.5 13.5l3.5 2.5-3.5 2.5M16 18.5h5" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="41" y="12.5" class="mono" font-size="9.5" font-weight="700" letter-spacing="0.9" fill="#F59E0B">02 // SYSTEMS</text>
+      <text x="41" y="28" class="sans" font-size="12" font-weight="700" fill="#f4f4f5">Compilers &amp; Internals</text>
+    </g>
+
+    <line x1="14" y1="62" x2="199" y2="62" stroke="#27272a" stroke-width="1"/>
+
+    <!-- Bullet Lines -->
+    <g transform="translate(14, 86)" class="sans" font-size="11.5" fill="#a1a1aa">
+      <circle cx="3" cy="-3.5" r="2" fill="#F59E0B"/>
+      <text x="12" y="0">Custom Rust lexer &amp; AST</text>
+
+      <circle cx="3" cy="23.5" r="2" fill="#F59E0B"/>
+      <text x="12" y="27">Zero-dep Git SHA-1 store</text>
+
+      <circle cx="3" cy="50.5" r="2" fill="#F59E0B"/>
+      <text x="12" y="54">3-way merge &amp; CLI tools</text>
+    </g>
+
+    <!-- Footer Pill -->
+    <rect x="14" y="165" width="185" height="26" rx="5" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+    <text x="106.5" y="182" class="mono" font-size="10" font-weight="600" fill="#71717a" text-anchor="middle">MyOwnLanguage · PyGit</text>
+  </g>
+  <g transform="translate(458, 2)">
+    <rect x="0.75" y="0.75" width="211.5" height="206.5" rx="9" fill="#111114" stroke="#27272a" stroke-width="1.5"/>
+    <path d="M 10,1 L 203,1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Header Row -->
+    <g transform="translate(14, 16)">
+      <rect x="0" y="0" width="32" height="32" rx="7" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+      <path d="M16 6l8 3.2v5.8c0 4.9-3.4 9-8 10.8-4.6-1.8-8-5.9-8-10.8V9.2L16 6z" stroke="#10B981" stroke-width="1.5" stroke-linejoin="round"/><path d="M12.5 16l2.3 2.3 4.7-4.7" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="41" y="12.5" class="mono" font-size="9.5" font-weight="700" letter-spacing="0.9" fill="#10B981">03 // SECURITY</text>
+      <text x="41" y="28" class="sans" font-size="12" font-weight="700" fill="#f4f4f5">Linux NetSec &amp; Privacy</text>
+    </g>
+
+    <line x1="14" y1="62" x2="199" y2="62" stroke="#27272a" stroke-width="1"/>
+
+    <!-- Bullet Lines -->
+    <g transform="translate(14, 86)" class="sans" font-size="11.5" fill="#a1a1aa">
+      <circle cx="3" cy="-3.5" r="2" fill="#10B981"/>
+      <text x="12" y="0">Scapy live packet sniffer</text>
+
+      <circle cx="3" cy="23.5" r="2" fill="#10B981"/>
+      <text x="12" y="27">Isolation Forest ML scan</text>
+
+      <circle cx="3" cy="50.5" r="2" fill="#10B981"/>
+      <text x="12" y="54">AES-256 + iptables guard</text>
+    </g>
+
+    <!-- Footer Pill -->
+    <rect x="14" y="165" width="185" height="26" rx="5" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+    <text x="106.5" y="182" class="mono" font-size="10" font-weight="600" fill="#71717a" text-anchor="middle">Netguard-pro · FileOrg</text>
+  </g>
+  <g transform="translate(687, 2)">
+    <rect x="0.75" y="0.75" width="211.5" height="206.5" rx="9" fill="#111114" stroke="#27272a" stroke-width="1.5"/>
+    <path d="M 10,1 L 203,1" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Header Row -->
+    <g transform="translate(14, 16)">
+      <rect x="0" y="0" width="32" height="32" rx="7" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+      <rect x="8" y="6" width="16" height="20" rx="2.8" stroke="#38BDF8" stroke-width="1.5"/><line x1="12.5" y1="22.5" x2="19.5" y2="22.5" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round"/><rect x="11" y="9.5" width="10" height="7" rx="1.2" stroke="#38BDF8" stroke-width="1.2"/>
+      <text x="41" y="12.5" class="mono" font-size="9.5" font-weight="700" letter-spacing="0.9" fill="#38BDF8">04 // APPS &amp; UI</text>
+      <text x="41" y="28" class="sans" font-size="12" font-weight="700" fill="#f4f4f5">Mobile &amp; Frontend</text>
+    </g>
+
+    <line x1="14" y1="62" x2="199" y2="62" stroke="#27272a" stroke-width="1"/>
+
+    <!-- Bullet Lines -->
+    <g transform="translate(14, 86)" class="sans" font-size="11.5" fill="#a1a1aa">
+      <circle cx="3" cy="-3.5" r="2" fill="#38BDF8"/>
+      <text x="12" y="0">Compose + Media3 Hi-Res</text>
+
+      <circle cx="3" cy="23.5" r="2" fill="#38BDF8"/>
+      <text x="12" y="27">49-component RN kit</text>
+
+      <circle cx="3" cy="50.5" r="2" fill="#38BDF8"/>
+      <text x="12" y="54">GSAP + Framer Motion UI</text>
+    </g>
+
+    <!-- Footer Pill -->
+    <rect x="14" y="165" width="185" height="26" rx="5" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+    <text x="106.5" y="182" class="mono" font-size="10" font-weight="600" fill="#71717a" text-anchor="middle">Tonarc · forma · Portfolio</text>
+  </g>
+</svg>

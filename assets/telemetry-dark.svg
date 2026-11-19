@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 210" width="900" height="210" fill="none">
+  <defs>
+    <clipPath id="barClip">
+      <rect x="0" y="0" width="446" height="10" rx="5"/>
+    </clipPath>
+    <style>
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+    </style>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="1" y="1" width="898" height="208" rx="10" fill="#09090b" stroke="#27272a" stroke-width="1.5"/>
+  <line x1="406" y1="1" x2="406" y2="209" stroke="#27272a" stroke-width="1"/>
+  <line x1="1" y1="36" x2="899" y2="36" stroke="#27272a" stroke-width="1"/>
+
+  <!-- Panel Headers -->
+  <text x="22" y="22.5" class="mono" font-size="10" font-weight="700" letter-spacing="1.1" fill="#71717a">GITHUB TELEMETRY // 12M WINDOW</text>
+  <text x="428" y="22.5" class="mono" font-size="10" font-weight="700" letter-spacing="1.1" fill="#71717a">ORIGINAL REPOSITORY STACK (45 REPOS)</text>
+
+  <!-- Left 2x2 Metric Tiles -->
+  <g transform="translate(22, 52)">
+    <rect x="0" y="0" width="174" height="64" rx="7" fill="#111114" stroke="#27272a" stroke-width="1"/>
+    <text x="14" y="29" class="sans" font-size="24" font-weight="800" fill="#DE5E14">1,085</text>
+    <text x="14" y="48" class="mono" font-size="9.5" font-weight="600" fill="#71717a">YEARLY CONTRIBUTIONS</text>
+
+    <rect x="188" y="0" width="174" height="64" rx="7" fill="#111114" stroke="#27272a" stroke-width="1"/>
+    <text x="202" y="29" class="sans" font-size="24" font-weight="800" fill="#f4f4f5">45 <tspan font-size="13" font-weight="600" fill="#71717a">/ 62</tspan></text>
+    <text x="202" y="48" class="mono" font-size="9.5" font-weight="600" fill="#71717a">ORIGINAL / PUBLIC REPOS</text>
+
+    <rect x="0" y="76" width="174" height="64" rx="7" fill="#111114" stroke="#27272a" stroke-width="1"/>
+    <text x="14" y="105" class="sans" font-size="24" font-weight="800" fill="#f4f4f5">608</text>
+    <text x="14" y="124" class="mono" font-size="9.5" font-weight="600" fill="#71717a">COMMIT CONTRIBUTIONS</text>
+
+    <rect x="188" y="76" width="174" height="64" rx="7" fill="#111114" stroke="#27272a" stroke-width="1"/>
+    <text x="202" y="105" class="sans" font-size="24" font-weight="800" fill="#10B981">20 <tspan font-size="13" font-weight="600" fill="#71717a">PRs · </tspan>18 <tspan font-size="14" font-weight="700" fill="#F59E0B">★</tspan></text>
+    <text x="202" y="124" class="mono" font-size="9.5" font-weight="600" fill="#71717a">PULL REQUESTS &amp; STARS</text>
+  </g>
+
+  <!-- Right Language Bar + Legend + Footer Strip -->
+  <g transform="translate(428, 55)">
+    <rect x="0" y="0" width="446" height="10" rx="5" fill="#1f1f25"/>
+    <g clip-path="url(#barClip)">
+      <rect x="0.00" y="0" width="99.61" height="10" fill="#3572A5"/><rect x="99.11" y="0" width="89.70" height="10" fill="#3178C6"/><rect x="188.31" y="0" width="79.79" height="10" fill="#F1E05A"/><rect x="267.60" y="0" width="30.23" height="10" fill="#E34C26"/><rect x="297.33" y="0" width="59.97" height="10" fill="#F34B7D"/><rect x="356.80" y="0" width="20.32" height="10" fill="#DE5E14"/><rect x="376.62" y="0" width="69.88" height="10" fill="#6E7681"/>
+    </g>
+
+    <g transform="translate(0, 26)">
+      <g transform="translate(0, 0)">
+      <circle cx="5" cy="5" r="4.5" fill="#3572A5"/>
+      <text x="16" y="9" class="sans" font-size="11.5" font-weight="600" fill="#f4f4f5">Python</text>
+      <text x="216" y="9" class="mono" font-size="10.5" fill="#71717a" text-anchor="end">10 (22%)</text>
+    </g><g transform="translate(228, 0)">
+      <circle cx="5" cy="5" r="4.5" fill="#3178C6"/>
+      <text x="16" y="9" class="sans" font-size="11.5" font-weight="600" fill="#f4f4f5">TypeScript</text>
+      <text x="216" y="9" class="mono" font-size="10.5" fill="#71717a" text-anchor="end">9 (20%)</text>
+    </g><g transform="translate(0, 24)">
+      <circle cx="5" cy="5" r="4.5" fill="#F1E05A"/>
+      <text x="16" y="9" class="sans" font-size="11.5" font-weight="600" fill="#f4f4f5">JavaScript</text>
+      <text x="216" y="9" class="mono" font-size="10.5" fill="#71717a" text-anchor="end">8 (18%)</text>
+    </g><g transform="translate(228, 24)">
+      <circle cx="5" cy="5" r="4.5" fill="#E34C26"/>
+      <text x="16" y="9" class="sans" font-size="11.5" font-weight="600" fill="#f4f4f5">HTML / CSS</text>
+      <text x="216" y="9" class="mono" font-size="10.5" fill="#71717a" text-anchor="end">3 (7%)</text>
+    </g><g transform="translate(0, 48)">
+      <circle cx="5" cy="5" r="4.5" fill="#F34B7D"/>
+      <text x="16" y="9" class="sans" font-size="11.5" font-weight="600" fill="#f4f4f5">C++ / Java / Dart</text>
+      <text x="216" y="9" class="mono" font-size="10.5" fill="#71717a" text-anchor="end">6 (13%)</text>
+    </g><g transform="translate(228, 48)">
+      <circle cx="5" cy="5" r="4.5" fill="#DE5E14"/>
+      <text x="16" y="9" class="sans" font-size="11.5" font-weight="600" fill="#f4f4f5">Rust &amp; Kotlin</text>
+      <text x="216" y="9" class="mono" font-size="10.5" fill="#71717a" text-anchor="end">2 (4%)</text>
+    </g><g transform="translate(0, 72)">
+      <circle cx="5" cy="5" r="4.5" fill="#6E7681"/>
+      <text x="16" y="9" class="sans" font-size="11.5" font-weight="600" fill="#f4f4f5">Docs / Other</text>
+      <text x="216" y="9" class="mono" font-size="10.5" fill="#71717a" text-anchor="end">7 (16%)</text>
+    </g>
+    </g>
+
+    <line x1="0" y1="121" x2="446" y2="121" stroke="#27272a" stroke-width="1"/>
+    <text x="0" y="137" class="mono" font-size="9.5" fill="#71717a">ACTIVE SINCE <tspan fill="#f4f4f5" font-weight="700">2020</tspan> · <tspan fill="#f4f4f5" font-weight="700">42</tspan> NEW REPOS (12M) · <tspan fill="#DE5E14" font-weight="700">5</tspan> FORKS</text>
+  </g>
+</svg>

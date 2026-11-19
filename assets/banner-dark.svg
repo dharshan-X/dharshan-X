@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" fill="none">
+  <defs>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DE5E14" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#F59E0B" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.95"/>
+    </linearGradient>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#DE5E14" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#DE5E14" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+      @keyframes pulseRing {
+        0%, 100% { opacity: 0.25; transform: scale(0.95); }
+        50% { opacity: 0.85; transform: scale(1.10); }
+      }
+      @keyframes dashFlow {
+        to { stroke-dashoffset: -24; }
+      }
+      @keyframes blinkDot {
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 1; }
+      }
+      .flow-active {
+        stroke-dasharray: 5 5;
+        animation: dashFlow 1.6s linear infinite;
+      }
+      .live-dot {
+        animation: blinkDot 2.2s ease-in-out infinite;
+      }
+      .halo-pulse {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: pulseRing 2.8s ease-in-out infinite;
+      }
+      
+    </style>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="1" y="1" width="898" height="258" rx="10" fill="#09090b" stroke="#27272a" stroke-width="1.5"/>
+
+  <!-- Subtle Blueprint Background Grid in Right Panel -->
+  <g stroke="#1c1c21" stroke-width="0.75">
+    <line x1="600" y1="36" x2="600" y2="224"/>
+    <line x1="675" y1="36" x2="675" y2="224"/>
+    <line x1="750" y1="36" x2="750" y2="224"/>
+    <line x1="825" y1="36" x2="825" y2="224"/>
+    <line x1="560" y1="80" x2="898" y2="80"/>
+    <line x1="560" y1="130" x2="898" y2="130"/>
+    <line x1="560" y1="180" x2="898" y2="180"/>
+  </g>
+
+  <!-- Structural Layout Lines -->
+  <line x1="36" y1="1" x2="36" y2="259" stroke="#27272a" stroke-width="1"/>
+  <line x1="560" y1="1" x2="560" y2="224" stroke="#27272a" stroke-width="1"/>
+  <line x1="1" y1="36" x2="899" y2="36" stroke="#27272a" stroke-width="1"/>
+  <line x1="1" y1="224" x2="899" y2="224" stroke="#27272a" stroke-width="1"/>
+
+  <!-- Top Accent Hairline -->
+  <rect x="36" y="1" width="524" height="2.5" fill="url(#accentGlow)"/>
+
+  <!-- Margin Coordinate Marks -->
+  <g class="mono" font-size="9" font-weight="700" fill="#71717a" text-anchor="middle">
+    <text x="18" y="22">A1</text>
+    <text x="18" y="134">A2</text>
+    <text x="18" y="246">A3</text>
+  </g>
+
+  <!-- Top Bar Labels -->
+  <text x="56" y="22" class="mono" font-size="10" font-weight="700" letter-spacing="1.2" fill="#71717a">01 // PROFILE SPECIFICATION</text>
+  <text x="580" y="22" class="mono" font-size="10" font-weight="700" letter-spacing="1.2" fill="#71717a">02 // SYSTEM TOPOLOGY</text>
+
+  <!-- Status Pill Top Right -->
+  <rect x="782" y="9" width="100" height="19" rx="9.5" fill="rgba(16, 185, 129, 0.14)" stroke="#10B981" stroke-opacity="0.45" stroke-width="1"/>
+  <circle cx="795" cy="18.5" r="3.5" fill="#10B981" class="live-dot"/>
+  <text x="805" y="22" class="mono" font-size="9.5" font-weight="700" fill="#10B981">BUILDING</text>
+
+  <!-- Left Main Identity -->
+  <g transform="translate(56, 62)">
+    <!-- Name + Handle Pill -->
+    <text x="0" y="26" class="sans" font-size="31" font-weight="800" letter-spacing="-0.8" fill="#f4f4f5">Dharshan Balaji</text>
+    <rect x="262" y="5" width="96" height="23" rx="6" fill="rgba(222, 94, 20, 0.14)" stroke="rgba(222, 94, 20, 0.42)" stroke-width="1"/>
+    <text x="310" y="20.5" class="mono" font-size="11.5" font-weight="700" fill="#DE5E14" text-anchor="middle">@dharshan-X</text>
+
+    <!-- Role Subtitle -->
+    <text x="0" y="52" class="mono" font-size="11" font-weight="700" letter-spacing="1" fill="#DE5E14">SOFTWARE ENGINEER · AI AGENTS, SYSTEMS &amp; FULL-STACK</text>
+
+    <!-- 2-line crisp description -->
+    <text x="0" y="80" class="sans" font-size="13.5" fill="#a1a1aa">Architecting autonomous agent loops, Neo4j GraphRAG pipelines,</text>
+    <text x="0" y="100" class="sans" font-size="13.5" fill="#a1a1aa">Linux security tooling, custom runtimes &amp; cross-platform apps.</text>
+
+    <!-- 4 Focus Pills -->
+    <g transform="translate(0, 121)">
+      <rect x="0" y="0" width="114" height="25" rx="5" fill="#18181b" stroke="#2e2e36" stroke-width="1"/>
+      <circle cx="13" cy="12.5" r="3" fill="#DE5E14"/>
+      <text x="23" y="16" class="mono" font-size="10" font-weight="600" fill="#f4f4f5">AI &amp; GraphRAG</text>
+      <rect x="124" y="0" width="118" height="25" rx="5" fill="#18181b" stroke="#2e2e36" stroke-width="1"/>
+      <circle cx="137" cy="12.5" r="3" fill="#F59E0B"/>
+      <text x="147" y="16" class="mono" font-size="10" font-weight="600" fill="#f4f4f5">Systems &amp; Rust</text>
+      <rect x="252" y="0" width="108" height="25" rx="5" fill="#18181b" stroke="#2e2e36" stroke-width="1"/>
+      <circle cx="265" cy="12.5" r="3" fill="#38BDF8"/>
+      <text x="275" y="16" class="mono" font-size="10" font-weight="600" fill="#f4f4f5">Android / RN</text>
+      <rect x="370" y="0" width="112" height="25" rx="5" fill="#18181b" stroke="#2e2e36" stroke-width="1"/>
+      <circle cx="383" cy="12.5" r="3" fill="#10B981"/>
+      <text x="393" y="16" class="mono" font-size="10" font-weight="600" fill="#f4f4f5">Linux NetSec</text>
+    </g>
+  </g>
+
+  <!-- Right Panel: Animated Architecture Topology -->
+  <g transform="translate(580, 50)">
+    <!-- Ambient Glow -->
+    <circle cx="145" cy="76" r="44" fill="url(#nodeGlow)"/>
+
+    <!-- Connecting Edges (ending cleanly at node boundaries) -->
+    <path d="M 80,33 L 122,68" stroke="#27272a" stroke-width="1.5"/>
+    <path d="M 80,117 L 122,84" stroke="#27272a" stroke-width="1.5"/>
+    <path d="M 167,66 L 218,32" stroke="#DE5E14" stroke-width="1.6" class="flow-active"/>
+    <path d="M 169,76 L 218,76" stroke="#38BDF8" stroke-width="1.6" class="flow-active"/>
+    <path d="M 167,86 L 218,120" stroke="#10B981" stroke-width="1.6" class="flow-active"/>
+
+    <!-- Left Input Nodes -->
+    <rect x="8" y="21" width="72" height="24" rx="5" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+    <text x="44" y="36.5" class="mono" font-size="10" font-weight="600" fill="#f4f4f5" text-anchor="middle">LLM / AST</text>
+
+    <rect x="8" y="105" width="72" height="24" rx="5" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+    <text x="44" y="120.5" class="mono" font-size="10" font-weight="600" fill="#f4f4f5" text-anchor="middle">PKT / GUI</text>
+
+    <!-- Pulsing Outer Ring + Solid Core Hub -->
+    <circle cx="145" cy="76" r="29" stroke="#DE5E14" stroke-width="1.2" stroke-opacity="0.5" class="halo-pulse"/>
+    <circle cx="145" cy="76" r="23" fill="#111114" stroke="#DE5E14" stroke-width="2"/>
+    <text x="145" y="73.5" class="mono" font-size="9.5" font-weight="800" fill="#DE5E14" text-anchor="middle">CORE</text>
+    <text x="145" y="85" class="mono" font-size="8.5" font-weight="600" fill="#a1a1aa" text-anchor="middle">LOOP</text>
+
+    <!-- Right Output Nodes -->
+    <rect x="218" y="18" width="80" height="24" rx="5" fill="#18181b" stroke="rgba(222, 94, 20, 0.42)" stroke-width="1"/>
+    <text x="258" y="33.5" class="mono" font-size="10" font-weight="700" fill="#DE5E14" text-anchor="middle">GraphRAG</text>
+
+    <rect x="218" y="64" width="80" height="24" rx="5" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+    <text x="258" y="79.5" class="mono" font-size="10" font-weight="600" fill="#38BDF8" text-anchor="middle">Runtime</text>
+
+    <rect x="218" y="110" width="80" height="24" rx="5" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+    <text x="258" y="125.5" class="mono" font-size="10" font-weight="600" fill="#10B981" text-anchor="middle">Edge UI</text>
+
+    <!-- Caption -->
+    <text x="8" y="159" class="mono" font-size="9.5" fill="#71717a">ENGINE: YOLO_AGENT + NEO4J + RUST_AST</text>
+  </g>
+
+  <!-- Bottom Telemetry Bar -->
+  <g transform="translate(56, 245)" class="mono" font-size="10" fill="#71717a">
+    <text x="0" y="0">LOC: <tspan fill="#f4f4f5" font-weight="700">SALEM, TN, INDIA</tspan></text>
+    <text x="198" y="0">REPOS: <tspan fill="#f4f4f5" font-weight="700">45 ORIGINAL / 62 PUBLIC</tspan></text>
+    <text x="454" y="0">STACK: <tspan fill="#f4f4f5" font-weight="700">PYTHON · TS · RUST · KOTLIN</tspan></text>
+    <text x="720" y="0">EDU: <tspan fill="#DE5E14" font-weight="700">B.E. CSE '28</tspan></text>
+  </g>
+</svg>
