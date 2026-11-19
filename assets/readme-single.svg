@@ -80,9 +80,9 @@
 
   <!-- Header Identity -->
   <g transform="translate(60, 65)">
-    <text class="title" x="0" y="25">dharshan-X</text>
-    <text class="subtitle" x="0" y="50">SYSTEMS &amp; COMPILER ARCHITECTURES</text>
-    <text class="mono-text" x="0" y="80">Designing deterministic memory layouts and high-throughput compiler pipelines.</text>
+    <text class="title" x="0" y="25">Dharshan Balaji</text>
+    <text class="subtitle" x="0" y="50">AI AGENTS, SYSTEMS &amp; FULL-STACK ARCHITECTURE</text>
+    <text class="mono-text" x="0" y="80">Building autonomous AI agents, GraphRAG engines, Linux NetSec &amp; apps.</text>
   </g>
 
   <!-- Technical Schematic (Header Right) -->
@@ -103,7 +103,7 @@
     <circle class="schematic-node" cx="140" cy="90" r="3.5" />
     <circle class="schematic-node active" cx="185" cy="55" r="4.5" />
 
-    <text class="mono-meta" x="0" y="120">CORE_OPT [WASM-VM] -- STATUS: OK</text>
+    <text class="mono-meta" x="0" y="120">YOLO_CORE [AGENT + NEO4J] -- ACTIVE</text>
   </g>
 
   <!-- ================= SECTION 01: RUNTIME CONFIGURATION ================= -->
@@ -116,107 +116,107 @@
     <circle cx="20" cy="40" r="4" fill="#ff5f56" />
     <circle cx="35" cy="40" r="4" fill="#ffbd2e" />
     <circle cx="50" cy="40" r="4" fill="#27c93f" />
-    <text class="mono-meta" x="70" y="43">dharshan.toml - Dev Environment Configurations</text>
+    <text class="mono-meta" x="70" y="43">dharshan.toml - Developer Runtime Configuration</text>
     <line class="grid-line" x1="0" y1="55" x2="730" y2="55" />
 
     <!-- TOML Code Block lines -->
     <g transform="translate(20, 80)">
-      <!-- [system] -->
-      <text class="toml-section" x="0" y="0">[system]</text>
+      <!-- [identity] -->
+      <text class="toml-section" x="0" y="0">[identity]</text>
       
-      <text class="toml-key" x="20" y="20">name</text><text class="toml-val" x="120" y="20">= "Dharshan"</text>
-      <text class="toml-key" x="20" y="40">role</text><text class="toml-val" x="120" y="40">= "Systems &amp; Backend Engineer"</text>
-      <text class="toml-key" x="20" y="60">location</text><text class="toml-val" x="120" y="60">= "Salem, Tamil Nadu, India"</text>
-      <text class="toml-key" x="20" y="80">language</text><text class="toml-val" x="120" y="80">= "Rust // C++ // C"</text>
+      <text class="toml-key" x="20" y="20">name</text><text class="toml-val" x="110" y="20">= "Dharshan Balaji"</text>
+      <text class="toml-key" x="20" y="40">handle</text><text class="toml-val" x="110" y="40">= "@dharshan-X"</text>
+      <text class="toml-key" x="20" y="60">location</text><text class="toml-val" x="110" y="60">= "Salem, Tamil Nadu, India"</text>
+      <text class="toml-key" x="20" y="80">languages</text><text class="toml-val" x="110" y="80">= "Python // TS // Rust // Kotlin"</text>
 
-      <!-- [compiler_internals] -->
-      <text class="toml-section" x="0" y="120">[compiler_internals]</text>
+      <!-- [ai_and_systems] -->
+      <text class="toml-section" x="0" y="120">[ai_and_systems]</text>
       
-      <text class="toml-key" x="20" y="140">targets</text><text class="toml-val" x="120" y="140">= ["wasm32-wasi", "x86_64-unknown-linux-gnu"]</text>
-      <text class="toml-key" x="20" y="160">optimizations</text><text class="toml-val" x="120" y="160">= ["mir-inliner", "dead-code-elimination", "register-allocation"]</text>
+      <text class="toml-key" x="20" y="140">agents</text><text class="toml-val" x="110" y="140">= ["ProjectYolo", "ActiveRag"]</text>
+      <text class="toml-key" x="20" y="160">engines</text><text class="toml-val" x="110" y="160">= ["MyOwnLang", "Netguard", "PyGit"]</text>
 
       <!-- [platforms] -->
-      <text class="toml-section" x="380" y="0">[platforms]</text>
+      <text class="toml-section" x="420" y="0">[platforms]</text>
       
-      <text class="toml-key" x="400" y="20">kernel</text><text class="toml-val" x="500" y="20">= "Linux"</text>
-      <text class="toml-key" x="400" y="40">virtualization</text><text class="toml-val" x="500" y="40">= ["Docker", "Kubernetes"]</text>
-      <text class="toml-key" x="400" y="60">pipeline</text><text class="toml-val" x="500" y="60">= ["GitLab CI", "GitHub Actions"]</text>
+      <text class="toml-key" x="435" y="20">mobile</text><text class="toml-val" x="505" y="20">= ["Android", "RN"]</text>
+      <text class="toml-key" x="435" y="40">web</text><text class="toml-val" x="505" y="40">= ["React", "Next.js"]</text>
+      <text class="toml-key" x="435" y="60">infra</text><text class="toml-val" x="505" y="60">= ["Linux", "Docker"]</text>
 
       <!-- Comments -->
-      <text class="toml-comment" x="380" y="120"># Active optimizing pass pipelines</text>
-      <text class="toml-key" x="380" y="140">ir_passes</text><text class="toml-val" x="500" y="140">= ["ssa", "cfg-simplification", "loop-vectorization"]</text>
+      <text class="toml-comment" x="420" y="120"># Verified repository footprint</text>
+      <text class="toml-key" x="435" y="140">repos</text><text class="toml-val" x="505" y="140">= "45 orig / 62 pub"</text>
     </g>
   </g>
 
   <!-- ================= SECTION 02: PIPELINE PASSES ================= -->
   <g transform="translate(60, 510)">
     <rect class="grid-line" x="0" y="-12" width="10" height="10" fill="var(--accent)" />
-    <text class="section-title" x="20" y="0">// 02. PIPELINE PASSES &amp; DOMAINS</text>
+    <text class="section-title" x="20" y="0">// 02. ARCHITECTURE DOMAINS</text>
 
-    <!-- Column 1: Frontend Passes -->
+    <!-- Column 1: Agentic AI -->
     <g transform="translate(0, 30)">
       <rect class="card-bg" x="0" y="0" width="230" height="180" rx="4" />
       <path d="M 0,0 L 230,0" stroke="var(--accent)" stroke-width="2" />
       
-      <text class="mono-bold" x="15" y="30">Frontend Compiler Passes</text>
+      <text class="mono-bold" x="15" y="30">Agentic AI &amp; GraphRAG</text>
       
-      <text class="mono-bold" x="15" y="65">01 // AST Generation</text>
-      <text class="mono-text" x="15" y="80">Lexing, parsing, and custom ASTs.</text>
+      <text class="mono-bold" x="15" y="65">01 // Orchestration</text>
+      <text class="mono-text" x="15" y="80">Multi-LLM ReAct loops.</text>
       
-      <text class="mono-bold" x="15" y="110">02 // Semantic Analysis</text>
-      <text class="mono-text" x="15" y="125">Type inference &amp; scoping rules.</text>
+      <text class="mono-bold" x="15" y="110">02 // Unified Memory</text>
+      <text class="mono-text" x="15" y="125">Neo4j vector + graph DB.</text>
       
-      <text class="mono-bold" x="15" y="155">03 // Intermediate Rep</text>
-      <text class="mono-text" x="15" y="170">Translation into SSA compiler forms.</text>
+      <text class="mono-bold" x="15" y="155">03 // GUI Perception</text>
+      <text class="mono-text" x="15" y="170">SoM vision &amp; stealth web.</text>
     </g>
 
     <!-- Flow indicator schematic lines -->
     <path class="schematic active" d="M 230,120 L 250,120 L 250,120 L 270,120" />
     <polygon points="270,117 276,120 270,123" fill="var(--accent)" />
 
-    <!-- Column 2: VMs and Runtimes -->
+    <!-- Column 2: Systems & Security -->
     <g transform="translate(250, 30)">
       <rect class="card-bg" x="0" y="0" width="230" height="180" rx="4" />
       <path d="M 0,0 L 230,0" stroke="var(--accent)" stroke-width="2" />
 
-      <text class="mono-bold" x="15" y="30">Virtual Machines &amp; Runtimes</text>
+      <text class="mono-bold" x="15" y="30">Systems &amp; Linux NetSec</text>
 
-      <text class="mono-bold" x="15" y="65">01 // Stack Machines</text>
-      <text class="mono-text" x="15" y="80">Custom WebAssembly interpreters.</text>
+      <text class="mono-bold" x="15" y="65">01 // Custom Languages</text>
+      <text class="mono-text" x="15" y="80">Rust lexer &amp; AST eval.</text>
 
-      <text class="mono-bold" x="15" y="110">02 // Memory Management</text>
-      <text class="mono-text" x="15" y="125">Lock-free, slab &amp; cache-aligned.</text>
+      <text class="mono-bold" x="15" y="110">02 // Threat Detection</text>
+      <text class="mono-text" x="15" y="125">Scapy + ML anomalies.</text>
 
-      <text class="mono-bold" x="15" y="155">03 // POSIX API Bindings</text>
-      <text class="mono-text" x="15" y="170">Syscalls and custom socket layers.</text>
+      <text class="mono-bold" x="15" y="155">03 // Clean-Room Git</text>
+      <text class="mono-text" x="15" y="170">SHA-1 store &amp; 3-way merge.</text>
     </g>
 
     <!-- Flow indicator schematic lines -->
     <path class="schematic" d="M 480,120 L 500,120 M 480,120 L 500,120" />
     <polygon points="500,117 506,120 500,123" fill="var(--text-muted)" />
 
-    <!-- Column 3: Systems Infra -->
+    <!-- Column 3: Mobile & UI -->
     <g transform="translate(500, 30)">
       <rect class="card-bg" x="0" y="0" width="230" height="180" rx="4" />
       <path d="M 0,0 L 230,0" stroke="var(--text-muted)" stroke-width="2" />
 
-      <text class="mono-bold" x="15" y="30">Systems Infrastructure</text>
+      <text class="mono-bold" x="15" y="30">Mobile &amp; Cross-Platform</text>
 
-      <text class="mono-bold" x="15" y="65">01 // Containerization</text>
-      <text class="mono-text" x="15" y="80">Minimal, scratch-based builds.</text>
+      <text class="mono-bold" x="15" y="65">01 // Android Audio</text>
+      <text class="mono-text" x="15" y="80">Compose + Media3 Hi-Res.</text>
 
-      <text class="mono-bold" x="15" y="110">02 // CI Pipelines</text>
-      <text class="mono-text" x="15" y="125">Parallel, multi-target checks.</text>
+      <text class="mono-bold" x="15" y="110">02 // Component Kits</text>
+      <text class="mono-text" x="15" y="125">49 RN UI components.</text>
 
-      <text class="mono-bold" x="15" y="155">03 // K8s Operators</text>
-      <text class="mono-text" x="15" y="170">Custom controller state machines.</text>
+      <text class="mono-bold" x="15" y="155">03 // Motion Web</text>
+      <text class="mono-text" x="15" y="170">GSAP &amp; Motion sites.</text>
     </g>
   </g>
 
   <!-- ================= SECTION 03: ACTIVE PROJECTS ================= -->
   <g transform="translate(60, 760)">
     <rect class="grid-line" x="0" y="-12" width="10" height="10" fill="var(--accent)" />
-    <text class="section-title" x="20" y="0">// 03. ACTIVE CRATES &amp; PROJECTS</text>
+    <text class="section-title" x="20" y="0">// 03. FEATURED REPOSITORIES</text>
 
     <!-- Registry Table Grid -->
     <g transform="translate(0, 20)">
@@ -224,37 +224,37 @@
       
       <!-- Table Header -->
       <line class="grid-line" x1="0" y1="35" x2="730" y2="35" stroke-width="1.5" />
-      <text class="mono-bold" x="20" y="22">Registry ID</text>
-      <text class="mono-bold" x="180" y="22">System Description</text>
-      <text class="mono-bold" x="550" y="22">Runtime Target</text>
-      <text class="mono-bold" x="660" y="22">Stage</text>
+      <text class="mono-bold" x="20" y="22">Repository</text>
+      <text class="mono-bold" x="165" y="22">Architecture Summary</text>
+      <text class="mono-bold" x="550" y="22">Stack</text>
+      <text class="mono-bold" x="655" y="22">Signal</text>
       
-      <!-- Row 1: wasm-vm -->
-      <text class="mono-bold" x="20" y="62" fill="var(--accent)">wasm-vm</text>
-      <text class="mono-text" x="180" y="62">Minimal WASI interpreter implemented in pure Rust</text>
-      <text class="mono-text" x="550" y="62">wasm32-wasi</text>
-      <text class="mono-bold" x="660" y="62">Beta</text>
+      <!-- Row 1: ProjectYolo -->
+      <text class="mono-bold" x="20" y="62" fill="var(--accent)">ProjectYolo</text>
+      <text class="mono-text" x="165" y="62">Autonomous AI agent with GUI vision &amp; mem0</text>
+      <text class="mono-text" x="550" y="62">Python</text>
+      <text class="mono-bold" x="655" y="62">3 stars</text>
       <line class="grid-line" x1="0" y1="75" x2="730" y2="75" />
 
-      <!-- Row 2: ast-compiler -->
-      <text class="mono-bold" x="20" y="97" fill="var(--accent)">ast-compiler</text>
-      <text class="mono-text" x="180" y="97">Custom compiler frontend with custom SSA optimization passes</text>
-      <text class="mono-text" x="550" y="97">x86_64-linux</text>
-      <text class="mono-bold" x="660" y="97">Pre-alpha</text>
+      <!-- Row 2: Tonarc -->
+      <text class="mono-bold" x="20" y="97" fill="var(--accent)">Tonarc</text>
+      <text class="mono-text" x="165" y="97">Privacy-first Android Hi-Res audio client</text>
+      <text class="mono-text" x="550" y="97">Kotlin</text>
+      <text class="mono-bold" x="655" y="97">4 stars</text>
       <line class="grid-line" x1="0" y1="110" x2="730" y2="110" />
 
-      <!-- Row 3: slab-alloc -->
-      <text class="mono-bold" x="20" y="132" fill="var(--accent)">slab-alloc</text>
-      <text class="mono-text" x="180" y="132">Cache-aligned slab allocator optimized for real-time systems</text>
-      <text class="mono-text" x="550" y="132">Bare-metal / Unix</text>
-      <text class="mono-bold" x="660" y="132">Stable</text>
+      <!-- Row 3: ActiveRag_Model -->
+      <text class="mono-bold" x="20" y="132" fill="var(--accent)">ActiveRag_Model</text>
+      <text class="mono-text" x="165" y="132">ReAct GraphRAG agent on Neo4j + FastAPI</text>
+      <text class="mono-text" x="550" y="132">Python</text>
+      <text class="mono-bold" x="655" y="132">API v2</text>
       <line class="grid-line" x1="0" y1="145" x2="730" y2="145" />
 
-      <!-- Row 4: sys-bpf -->
-      <text class="mono-bold" x="20" y="167" fill="var(--accent)">sys-bpf</text>
-      <text class="mono-text" x="180" y="167">Linux eBPF kernel telemetry filter and reporting utility</text>
-      <text class="mono-text" x="550" y="167">x86_64-linux</text>
-      <text class="mono-bold" x="660" y="167">Active</text>
+      <!-- Row 4: Netguard-pro -->
+      <text class="mono-bold" x="20" y="167" fill="var(--accent)">Netguard-pro</text>
+      <text class="mono-text" x="165" y="167">Scapy live sniffer, ML &amp; iptables defense</text>
+      <text class="mono-text" x="550" y="167">Python/React</text>
+      <text class="mono-bold" x="655" y="167">Active</text>
     </g>
   </g>
 
@@ -268,26 +268,26 @@
       <circle cx="20" cy="20" r="3.5" fill="var(--accent)" />
       <line class="schematic active" x1="20" y1="20" x2="120" y2="20" />
       <text class="mono-bold" x="130" y="24">Email</text>
-      <text class="mono-text" x="230" y="24">you@email.com</text>
+      <text class="mono-text" x="230" y="24">dharshanbalaji83@gmail.com</text>
 
       <circle cx="20" cy="50" r="3.5" fill="var(--text-muted)" />
       <line class="schematic" x1="20" y1="50" x2="120" y2="50" />
-      <text class="mono-bold" x="130" y="54">LinkedIn</text>
-      <text class="mono-text" x="230" y="54">linkedin.com/in/dharshan-X</text>
+      <text class="mono-bold" x="130" y="54">Portfolio</text>
+      <text class="mono-text" x="230" y="54">dharshanbalaji.vercel.app</text>
 
       <circle cx="20" cy="80" r="3.5" fill="var(--text-muted)" />
       <line class="schematic" x1="20" y1="80" x2="120" y2="80" />
-      <text class="mono-bold" x="130" y="84">Twitter</text>
-      <text class="mono-text" x="230" y="84">twitter.com/dharshan-X</text>
+      <text class="mono-bold" x="130" y="84">LinkedIn</text>
+      <text class="mono-text" x="230" y="84">linkedin.com/in/dharshan-balaji-a72a67308</text>
     </g>
   </g>
 
   <!-- Footer Stats / Marks -->
   <g transform="translate(60, 1128)">
-    <text class="mono-meta" x="0" y="0">SPEC-ID: <tspan fill="var(--text-primary)">ASM-README-99A</tspan></text>
-    <text class="mono-meta" x="220" y="0">ENCODING: <tspan fill="var(--text-primary)">UTF-8 / XML</tspan></text>
+    <text class="mono-meta" x="0" y="0">SPEC-ID: <tspan fill="var(--text-primary)">DHARSHAN-README-v2</tspan></text>
+    <text class="mono-meta" x="220" y="0">ENCODING: <tspan fill="var(--text-primary)">UTF-8 / SVG</tspan></text>
     <text class="mono-meta" x="420" y="0">RENDER_MODE: <tspan fill="var(--text-primary)">VECTOR_ONLY</tspan></text>
-    <text class="mono-meta" x="620" y="0">CRC32: <tspan fill="var(--text-primary)">0x8F9B2C4D</tspan></text>
+    <text class="mono-meta" x="620" y="0">STATUS: <tspan fill="var(--text-primary)">VERIFIED</tspan></text>
   </g>
 
 </svg>
